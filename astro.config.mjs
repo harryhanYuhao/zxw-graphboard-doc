@@ -13,14 +13,21 @@ export default defineConfig({
           label: 'User Guide',
           items: [
             { label: 'Introduction', slug: 'user-guides/introduction' },
+            { label: 'Getting Started', slug: 'user-guides/getting-started' },
+            { label: 'Editing Graphs', slug: 'user-guides/editing-graphs' },
+            { label: 'Vertex Types', slug: 'user-guides/vertex-types' },
+            { label: 'Keyboard Shortcuts', slug: 'user-guides/keyboard-shortcuts' },
+            { label: 'Saving & Loading', slug: 'user-guides/saving-and-loading' },
           ],
         },
         {
           label: 'Developer Docs',
           items: [
-            { label: 'Overview', slug: 'dev-docs/overview' }
-
-          ]
+            { label: 'Overview', slug: 'dev-docs/overview' },
+            { label: 'State Management', slug: 'dev-docs/state-management' },
+            { label: 'Graph Model', slug: 'dev-docs/graph-model' },
+            { label: 'Contributing', slug: 'dev-docs/contributing' },
+          ],
         },
       ],
     }),

@@ -1,50 +1,49 @@
 ---
-title: Welcome to ZXW Graphboard Documentation!
-description: ZXW Graphboard Documentation
-# template: splash # hide site sidebar on this page
+title: ZXW Graphboard
+description: Documentation for the ZXW Graphboard — an online editor for ZXW-calculus graphs.
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  tagline: A browser-based editor for drawing and editing ZXW-calculus graphs.
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: User Guide
+      link: /user-guides/introduction/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+      variant: primary
+    - text: Developer Docs
+      link: /dev-docs/overview/
       icon: external
-      variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+**ZXW Graphboard** is an online graph editor for [ZXW calculus](https://en.wikipedia.org/wiki/ZX-calculus),
+a diagrammatic calculus used in quantum computing. Place vertices, connect them with edges,
+assign phase labels, and export the resulting graph as JSON — all in the browser, with no
+account or backend.
+
+Try it live at **[zxwgraphboard.netlify.app](https://zxwgraphboard.netlify.app)**, or browse the
+[source code on GitHub](https://github.com/harryhanYuhao/graphboard).
+
+## What you can do
+
+- Draw ZXW diagrams with eight generator types (Z/X spiders and boxes, H, W, And gate, empty node)
+- Connect vertices with click-to-connect edges, including fan-out from multiple sources
+- Annotate spiders and boxes with phase expressions (`\pi/2`, `3\alpha + 1`, …) rendered with KaTeX
+- Rotate vertices, undo/redo, copy/paste subgraphs
+- Autosave to your browser; export and import graphs as JSON files
 
 <CardGrid stagger>
-  <a href="user-guides/introduction/">
-  	<Card title="User Guide" icon="document">
-  		Check the User Guide
-  	</Card>
-  </a>
-  <a href="dev-docs/overview/">
-  	<Card title="Development Documentations" icon="document">
-  		How to contribute to development.
-  	</Card>
-  </a>
-	<Card title="Suggests Update" icon="pencil">
-		Open PR or issues in [zxw-graphboard-doc](https://github.com/Fabrial-Research/zxw-graphboard-doc)
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+  <Card title="User Guide" icon="document">
+    Learn how to use the editor: modes, vertices, edges, saving and loading. Start with
+    [Introduction](/user-guides/introduction/).
+  </Card>
+  <Card title="Developer Docs" icon="setting">
+    Architecture, the state model, and how to contribute. Start with
+    [Overview](/dev-docs/overview/).
+  </Card>
+  <Card title="Live App" icon="rocket">
+    Open the deployed editor at [zxwgraphboard.netlify.app](https://zxwgraphboard.netlify.app).
+  </Card>
+  <Card title="Source Code" icon="github">
+    Contribute or report issues at the [graphboard repo](https://github.com/harryhanYuhao/graphboard).
+  </Card>
 </CardGrid>
