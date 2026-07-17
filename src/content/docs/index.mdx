@@ -1,7 +1,7 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: Welcome to ZXW Graphboard Documentation!
+description: ZXW Graphboard Documentation
+# template: splash # hide site sidebar on this page
 hero:
   tagline: Congrats on setting up a new Starlight project!
   image:
@@ -21,8 +21,18 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 ## Next steps
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+  <a href="user-guides/introduction/">
+  	<Card title="User Guide" icon="document">
+  		Check the User Guide
+  	</Card>
+  </a>
+  <a href="dev-docs/overview/">
+  	<Card title="Development Documentations" icon="document">
+  		How to contribute to development.
+  	</Card>
+  </a>
+	<Card title="Suggests Update" icon="pencil">
+		Open PR or issues in [zxw-graphboard-doc](https://github.com/Fabrial-Research/zxw-graphboard-doc)
 	</Card>
 	<Card title="Change page layout" icon="document">
 		Delete `template: splash` in `src/content/docs/index.mdx` to display a
